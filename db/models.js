@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize')
 const DataTypes = Sequelize.DataTypes
+//const dbConfig = require('/config').DB
 
 const db = new Sequelize('passportdb', 'ppuser', 'pppass', {
-    dialect: 'mysql'
-})
+    dialect: 'mysql'})
 
 const User = db.define('users', {
     id: {
