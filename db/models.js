@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 const DataTypes = Sequelize.DataTypes
-//const config = require('../config')
+const config = require('../config')
 
 //const db = new Sequelize('passportdb', 'ppuser', 'pppass', {
    // dialect: 'mysql'})
@@ -19,7 +19,7 @@ const User = db.define('users', {
     password: DataTypes.STRING
 })
 
-db.sync().then(() => "Database created")
+db.sync().then(() =>{console.log("Database created")})
 
 exports = module.exports = {
     db,
