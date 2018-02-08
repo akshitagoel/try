@@ -4,7 +4,7 @@ const config = require('../config')
 
 //const db = new Sequelize('passportdb', 'ppuser', 'pppass', {
    // dialect: 'mysql'})
-
+const db = new Sequelize(config.DATABASE_URL);
 const User = db.define('users', {
     id: {
         type: DataTypes.INTEGER,
