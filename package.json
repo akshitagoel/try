@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "",
@@ -21,6 +22,6 @@
     "sequelize": "^4.32.6"
   },
   "engines": {
-    "node":"8"
+    "node": "8"
   }
 }
